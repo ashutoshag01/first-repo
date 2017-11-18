@@ -18,7 +18,7 @@ function compare {
 }
 while [[ "$n" -eq "0" ]]
 do
-	read numGuess
+	read -p "Guess number of files in directory: "numGuess
 	compare $numGuess
 done
 echo "Congrats for guessing the number correct"
